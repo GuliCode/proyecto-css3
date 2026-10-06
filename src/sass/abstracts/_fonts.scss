@@ -1,0 +1,21 @@
+// -----------------------------------------------------------------------------
+// This file contains all @font-face declarations, if any.
+// -----------------------------------------------------------------------------
+@font-face {
+  font-family: "Poppins";
+  src: url("../../assets/fonts/Poppins-Regular.ttf") format("woff2");
+  font-weight: 400;
+}
+
+@font-face {
+  font-family: "Poppins";
+  src: url("../../assets/fonts/Poppins-Bold.ttf") format("woff2");
+  font-weight: 700;
+}
+
+@font-face {
+  font-family: "title";
+  src: url("../../assets/fonts/PlayfairDisplay-VariableFont_wght.ttf")
+    format("woff2");
+  font-weight: 400;
+}

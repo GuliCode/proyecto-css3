@@ -1,0 +1,10 @@
+@charset "UTF-8";
+
+// 1. Base stuff
+@use "./abstracts/fonts";
+@use "./layout/body";
+
+// 2. Layout-related sections
+@use "./layout/header";
+@use "./layout/hero";
+@use "./layout/details";

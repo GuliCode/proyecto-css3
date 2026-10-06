@@ -1,0 +1,77 @@
+@use "../abstracts/fonts";
+@use "../abstracts/variables" as v;
+
+.hero {
+  background-image: url(../../assets/hero.jpg);
+  background-repeat: no-repeat;
+  background-size: contain;
+  background-size: 60%;
+  display: flex;
+  justify-content: flex-end;
+  color: v.$color-letter;
+
+  .hero-content {
+    margin-top: 50px;
+    width: 55%;
+
+    .hero-header {
+      padding: 30px;
+      background-color: rgb(256 255 255 / 0.7);
+      backdrop-filter: blur(8px);
+      margin-bottom: 30px;
+      text-align: left;
+
+      h1 {
+        position: relative;
+        padding: 0;
+        margin: 0;
+        font-family: v.$font-title;
+        font-size: 45px;
+        line-height: 55px;
+        max-width: 70%;
+        &::before {
+          content: "";
+          width: 50px;
+          height: 6px;
+          border-radius: 2px;
+          background-color: v.$color-primary;
+          position: absolute;
+          top: 26px;
+          right: -15px;
+        }
+      }
+
+      p {
+        padding: 0;
+        margin: 30px 0 0;
+        color: v.$color-letter2;
+        font-size: 18px;
+      }
+    }
+
+    .hero-list {
+      ul {
+        font-size: 14px;
+        list-style: none;
+        margin: 0;
+        padding: 0;
+        width: 60%;
+        margin-right: 40px;
+        margin-left: auto;
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        grid-template-rows: 1fr 1fr;
+        gap: 10px;
+
+        li {
+          font-weight: 400;
+          padding-left: 30px;
+          background-image: url(../../assets/icons/check.svg);
+          background-repeat: no-repeat;
+          background-position: left center;
+          background-size: 20px;
+        }
+      }
+    }
+  }
+}

@@ -1,0 +1,64 @@
+@use "../abstracts/fonts";
+@use "../abstracts/variables" as v;
+
+header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  font-size: 15px;
+
+  .logo {
+    display: inline-block;
+    line-height: 0;
+
+    img {
+      width: 200px;
+    }
+  }
+
+  .nav-principal ul {
+    display: flex;
+    align-items: center;
+    gap: 50px;
+    list-style: none;
+
+    li a {
+      text-decoration: none;
+      color: v.$color-letter;
+
+      &:hover {
+        color: v.$color-primary;
+      }
+    }
+    li a.active {
+      color: v.$color-primary;
+    }
+  }
+
+  .login ul {
+    display: flex;
+    gap: 30px;
+    align-items: center;
+    list-style: none;
+
+    li a {
+      text-decoration: none;
+      color: v.$color-primary;
+
+      &:hover {
+        text-decoration: underline;
+      }
+    }
+
+    li a.btn {
+      background-color: v.$color-primary;
+      padding: 10px 25px;
+      color: v.$color-secondary;
+
+      &:hover {
+        background-color: v.$color-letter;
+        text-decoration: none;
+      }
+    }
+  }
+}
